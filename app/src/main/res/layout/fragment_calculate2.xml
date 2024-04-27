@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 5/20/22, 8:42 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 5/20/22, 8:41 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CalculateFragment">
+
+    <!-- ScrollBar -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <!-- Constraint Layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="28dp">
+
+            <!-- Note -->
+            <TextView
+                android:id="@+id/text_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Side A -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout1"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/side_a"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_note">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_edit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Side B -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout2"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/side_b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_input_layout1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_edit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Switch -->
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_round_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:minHeight="48dp"
+                android:text="@string/text_switch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_input_layout2"
+                app:thumbTint="@color/thumb"
+                app:trackTint="@color/track" />
+
+            <!-- Button : Submit -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit"
+                style="@style/ButtonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switch_round_up" />
+
+            <!-- Text View : Square Feet -->
+            <TextView
+                android:id="@+id/square_feet"
+                style="@style/AppTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_square_feet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+
+            <!-- Text View : Answer - Square Feet -->
+            <TextView
+                android:id="@+id/square_feet_ans"
+                style="@style/AppTextStyleAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_square_feet_ans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/square_feet" />
+
+            <!-- Text View :Marla -->
+            <TextView
+                android:id="@+id/marla"
+                style="@style/AppTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_marla"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/square_feet_ans" />
+
+            <!-- Text View : Answer - Marla -->
+            <TextView
+                android:id="@+id/marla_ans"
+                style="@style/AppTextStyleAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_marla_ans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/marla" />
+
+            <!-- Text View : Kanal -->
+            <TextView
+                android:id="@+id/kanal"
+                style="@style/AppTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_kanal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/marla_ans" />
+
+            <!-- Text View : Answer - Kanal -->
+            <TextView
+                android:id="@+id/kanal_ans"
+                style="@style/AppTextStyleAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_kanal_ans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kanal" />
+
+            <!-- Text View : Acre -->
+            <TextView
+                android:id="@+id/acre"
+                style="@style/AppTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_acre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kanal_ans" />
+
+            <!-- Text View : Answer - Acre -->
+            <TextView
+                android:id="@+id/acre_ans"
+                style="@style/AppTextStyleAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_acre_ans"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acre" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

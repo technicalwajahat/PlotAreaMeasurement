@@ -1,0 +1,24 @@
+/*
+ *     Created by Technical Wajahat on 3/20/22, 3:00 PM
+ *     wajahat.awan.924@gmail.com
+ *     Last modified 3/20/22, 2:57 PM
+ *     Copyright © 2022
+ *     All rights reserved.
+ */
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Plot Area Measurement"
+include ':app'

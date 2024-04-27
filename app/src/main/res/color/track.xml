@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 5/24/22, 2:41 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 5/24/22, 2:41 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#666EC6FF" android:state_checked="true" />
+    <item android:color="#808C8C8C" android:state_checked="false" />
+</selector>

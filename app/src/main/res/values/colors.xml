@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 3/20/22, 3:00 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 3/20/22, 2:57 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryColor">#2196f3</color>
+    <color name="primaryLightColor">#6ec6ff</color>
+    <color name="primaryDarkColor">#0069c0</color>
+    <color name="secondaryColor">#212121</color>
+    <color name="secondaryLightColor">#484848</color>
+    <color name="warning">#FFCC00</color>
+    <color name="ActionBarColor">#e4effc</color>
+    <color name="StatusBarColor">#252f39</color>
+    <color name="IndicatorColor">#662196F3</color>
+</resources>

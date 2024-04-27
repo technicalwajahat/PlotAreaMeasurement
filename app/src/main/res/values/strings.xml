@@ -1,0 +1,59 @@
+<!--
+  ~     Created by Technical Wajahat on 3/20/22, 3:00 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 3/20/22, 2:57 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">Plot Area Measurement</string>
+    <string name="side_a">Side a:</string>
+    <string name="side_b">Side b:</string>
+    <string name="side_c">Side c:</string>
+    <string name="text_submit">CALCULATE</string>
+    <string name="text_switch">Round up measurement?</string>
+    <string name="text_square_feet">Square Feet</string>
+    <string name="text_marla">Marla</string>
+    <string name="text_kanal">Kanal</string>
+    <string name="text_acre">Acre</string>
+    <string name="text_square_feet_ans">0</string>
+    <string name="text_kanal_ans">0</string>
+    <string name="text_marla_ans">0</string>
+    <string name="text_acre_ans">0</string>
+    <string name="text_copyrights">&#169; 2022 Technical Wajahat</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="calculate">Calculate</string>
+    <string name="info">Info</string>
+    <string name="land_measuring_units">Plot Measuring Units</string>
+    <string name="karam">1 Karam</string>
+    <string name="karam_in_foot">5.5 ft.</string>
+    <string name="marla">1 Marla</string>
+    <string name="marla_in_karam">9 Sq. karam</string>
+    <string name="marla_in_sq_ft">272.25 Sq. ft</string>
+    <string name="kanal">1 Kanal</string>
+    <string name="kanal_in_marlas">20 marlas</string>
+    <string name="kanal_in_sq_ft">5445 Sq. ft</string>
+    <string name="bigha">1 Bigha</string>
+    <string name="bigha_in_kanals">4 kanals</string>
+    <string name="bigha_in_marlas">80 marlas</string>
+    <string name="acre">1 Acre</string>
+    <string name="acre_in_bigha">2 bigha</string>
+    <string name="acre_in_kanals">8 kanals</string>
+    <string name="acre_in_marlas">160 marlas</string>
+    <string name="hectare">1 Hectare</string>
+    <string name="hectare_in_acres">2.47 acres</string>
+    <string name="hectare_in_kanals">19.7 kanals</string>
+    <string name="hectare_in_marlas">395.368 marlas</string>
+    <string name="murabba">1 Murabba</string>
+    <string name="murabba_in_acres">25 acres</string>
+    <string name="murabba_in_kanals">200 kanals</string>
+    <string name="murabba_in_marlas">4000 marlas</string>
+    <string name="none">None</string>
+    <string name="select_sides">Select Sides</string>
+    <string name="go">GO</string>
+    <string name="default_text">Default Text</string>
+    <string name="note">* Note: Sides values should be in square feet.</string>
+</resources>

@@ -1,0 +1,104 @@
+<!--
+  ~     Created by Technical Wajahat on 3/20/22, 3:00 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 3/20/22, 2:57 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PlotAreaMeasurement" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryLightColor</item>
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primaryLightColor</item>
+        <item name="colorSecondaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/IndicatorColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="m">@color/StatusBarColor</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- App Bar Layout : Syling -->
+    <style name="AppToolBar" parent="">
+        <item name="materialThemeOverlay">@style/ToolBar</item>
+    </style>
+
+    <!-- App Bar Layout : Background Color -->
+    <style name="ToolBar" parent="Widget.Material3.AppBarLayout">
+        <item name="android:backgroundTint">@color/StatusBarColor</item>
+    </style>
+
+    <!-- Text View : Square Feet, Kanal, Marla, Acre -->
+    <style name="AppTextStyle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/primaryLightColor</item>
+    </style>
+
+    <!-- Text View : Answer - Square Feet, Kanal, Marla, Acre -->
+    <style name="AppTextStyleAnswer" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">24sp</item>
+        <item name="lineHeight">30sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Button : Submit -->
+    <style name="ButtonSubmit" parent="Widget.Material3.Button">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Bottom Navigation -->
+    <style name="BottomStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <!-- Text View : Kanal, Marla, Acre, etc -->
+    <style name="InfoTitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/primaryLightColor</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Text View : Rows - Kanal, Marla, Acre, etc -->
+    <style name="InfoRows" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">0.5dp</item>
+    </style>
+
+    <!-- Table Layout -->
+    <style name="Table" parent="">
+        <item name="android:background">@color/primaryLightColor</item>
+    </style>
+
+    <!-- About Title Style -->
+    <style name="aboutStyleTitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- About More About Style -->
+    <style name="aboutTextLinkStyle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColorLink">@color/primaryColor</item>
+    </style>
+
+</resources>

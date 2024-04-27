@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 5/20/22, 2:55 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 5/20/22, 2:55 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calculate_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_calculate"
+        android:title="@string/calculate" />
+    <item
+        android:id="@+id/info_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="@string/info" />
+</menu>

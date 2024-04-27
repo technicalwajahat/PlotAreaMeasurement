@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 5/20/22, 9:55 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 5/20/22, 8:41 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".InfoFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="UselessParent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TableLayout
+                style="@style/Table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="18dp"
+                        android:text="@string/land_measuring_units"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/karam"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/karam_in_foot"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/marla"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/marla_in_karam"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/marla"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/marla_in_sq_ft"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/kanal"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/kanal_in_marlas"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/kanal"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/kanal_in_sq_ft"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/bigha"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/bigha_in_kanals"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/bigha"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/bigha_in_marlas"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre_in_bigha"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre_in_kanals"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/acre_in_marlas"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare_in_acres"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare_in_kanals"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hectare_in_marlas"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba_in_acres"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba_in_kanals"
+                        tools:targetApi="p" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba"
+                        tools:targetApi="p" />
+
+                    <TextView
+                        style="@style/InfoRows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/murabba_in_marlas"
+                        tools:targetApi="p" />
+                </TableRow>
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<!--
+  ~     Created by Technical Wajahat on 7/6/22, 1:25 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 7/6/22, 1:25 PM
+  ~     Copyright © 2022  
+  ~     All rights reserved.
+  -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dropdown_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:text="@string/default_text"
+    android:textStyle="normal" />

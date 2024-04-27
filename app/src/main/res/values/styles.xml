@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Created by Technical Wajahat on 3/20/22, 2:57 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 2/10/22, 6:53 PM
+  ~     Copyright (c) 2022
+  ~     All rights reserved.
+  -->
+
+<resources>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="minHeight">48dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">10</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="TextStyle" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="styleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+
+    <style name="aboutTextStyle" parent="">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.PlotAreaMeasurement</item>
+    </style>
+
+</resources>

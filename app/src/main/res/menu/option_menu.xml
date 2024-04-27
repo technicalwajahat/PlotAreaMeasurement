@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Created by Technical Wajahat on 3/20/22, 3:00 PM
+  ~     wajahat.awan.924@gmail.com
+  ~     Last modified 3/20/22, 2:57 PM
+  ~     Copyright © 2022
+  ~     All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="0"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/feedback"
+        android:orderInCategory="1"
+        android:title="@string/feedback" />
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="2"
+        android:title="@string/about" />
+</menu>
